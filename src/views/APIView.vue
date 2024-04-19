@@ -24,8 +24,13 @@ async function fetchData() {
 	// return await fetch('https://o8p0r20xo5.execute-api.us-east-1.amazonaws.com/default/GetSecretLambda-03/name')
 	// return await fetch('https://o8p0r20xo5.execute-api.us-east-1.amazonaws.com/default/GetSecretLambda-03/webhook-secret-01')
 	// return await fetch('https://o8p0r20xo5.execute-api.us-east-1.amazonaws.com/default/GetSecretLambda-03/secret-key-test-01')
-	return await fetch('https://o8p0r20xo5.execute-api.us-east-1.amazonaws.com/default/GetSecretLambda-03/findme')
-	// return await fetch('')
+	// return await fetch('https://o8p0r20xo5.execute-api.us-east-1.amazonaws.com/default/GetSecretLambda-03/findme')
+
+	// return await fetch('https://sel1q88v80.execute-api.us-east-1.amazonaws.com/default/GetStripeSecrets/name')
+	// return await fetch('https://sel1q88v80.execute-api.us-east-1.amazonaws.com/default/GetStripeSecrets/webhook-secret-01')
+	// return await fetch('https://sel1q88v80.execute-api.us-east-1.amazonaws.com/default/GetStripeSecrets/secret-key-test-01')
+	// return await fetch('https://sel1q88v80.execute-api.us-east-1.amazonaws.com/default/GetStripeSecrets/findme')
+	return await fetch('https://sel1q88v80.execute-api.us-east-1.amazonaws.com/default/GetStripeSecrets')
 	.then(resp => {
 		if (!resp.ok) {
 			throw `Server error: [${resp.status}] [${resp.statusText}] [${resp.url}]`;
